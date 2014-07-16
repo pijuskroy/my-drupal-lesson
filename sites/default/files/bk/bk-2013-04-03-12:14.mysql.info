@@ -1,8 +1,0 @@
-filename = "bk-2013-04-03-12:14"
-description = ""
-datestamp = "1364971440"
-generator = "Backup and Migrate (http://drupal.org/project/backup_migrate)"
-generatorversion = "7.x-2.x"
-sites[0][version] = "7.21"
-sites[0][name] = "My Lesson - Drupal"
-sites[0][url] = "http://my-drupal-lesson.com/"

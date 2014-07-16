@@ -1,1 +1,0 @@
-window.CKEDITOR_BASEPATH = '/learn-drupal/sites/all/libraries/ckeditor/';

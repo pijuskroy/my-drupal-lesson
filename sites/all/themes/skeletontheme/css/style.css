@@ -140,9 +140,9 @@ table table { font-size: 1em; }
 table tr th { border-bottom: 1px solid white; border-top: 1px solid #dddddd; font-weight: normal;
 color: #707070; text-shadow: white 1px 1px 0; background: #dddddd url(../images/gradient_small_trans.png) repeat-x 0 top; }
 
-th { padding:5px 15px; border:none; }
+th { padding:5px 10px; border:none; }
 
-td { padding:15px; border:none; }
+td { padding:5px; border:none; }
 
 table tr th, table tr th a, table tr th a:hover { font-weight: bold; }
 
@@ -616,3 +616,5 @@ background: url(../images/light/arrow_bullet.png) no-repeat 2px; text-decoration
 .item-list ul.items li a.views-more-link { border: none; background:none; font-weight: normal; padding: 0; display:inline; line-height: 0;}
 
 pre, code { border: 1px solid #CCCCCC; overflow-x: auto; }
+
+#block-views-tags-sub-tags ul li a { display: inline; }
