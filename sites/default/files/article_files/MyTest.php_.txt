@@ -1,0 +1,52 @@
+<?php
+
+require_once __DIR__ . '/include/bootstrap.php';
+
+class MyTest extends PHPUnit_Framework_TestCase {
+    /**
+     * @var RemoteWebDriver
+     */
+    protected $webDriver;
+    
+    protected $url = 'http://localhost/drupal724/';
+
+    protected function setUp() {
+      $host = 'http://localhost:4444/wd/hub'; // this is the default
+      $capabilities = array(WebDriverCapabilityType::BROWSER_NAME => 'firefox');
+      $this->webDriver = RemoteWebDriver::create($host, $capabilities);
+    }    
+
+    public function testHome() {		
+      $this->webDriver->get($this->url);
+      // checking that page title contains word 'Dev'
+      $this->assertContains('Dev', $this->webDriver->getTitle());
+      $this->assertEquals($this->webDriver->getCurrentUrl(), $this->url);
+    }
+    
+    public function testStackIsInitiallyEmpty() {
+	  $stack = array();
+	  $this->assertEmpty($stack);
+	  return $stack;
+	}
+	/**
+	* @depends testStackIsInitiallyEmpty
+	*/
+	public function testPushingAnElementOntoTheStackWorks(array $stack) {
+	  array_push($stack, 'foo');
+	  $this->assertEquals('foo', $stack[count($stack)-1]);
+	  return $stack;
+	}
+	/**
+	* @depends testPushingAnElementOntoTheStackWorks
+	*/
+	public function testPoppingAnElementOffTheStackWorks(array $stack) {
+	  $this->assertEquals('foo', array_pop($stack));
+	  $this->assertEmpty($stack);
+	  $this->assertEquals('foo', 'kk');
+	} 
+
+    protected function tearDown() {
+      $this->webDriver->close();
+    }
+
+}
