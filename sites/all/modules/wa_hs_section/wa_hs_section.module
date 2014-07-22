@@ -9,16 +9,16 @@
 /**
  * Separator to be used in hierarchical select field.
  */
-   define('WA_HS_SECTION_SEPARATOR', '|')
+define('WA_HS_SECTION_SEPARATOR', '|');
 
 /**
  * Implements hook_form_FORM_ID_alter().
  */
-function wa_hs_section_form_workbench_access_user_form_alter(&$form, &$form_state, $form_id){
+function wa_hs_section_form_workbench_access_user_form_alter(&$form, &$form_state, $form_id) {
 
   // User id of the user.
-  $access_uid = $form['uid']['#value'];
-  $account = user_load($access_uid);
+  $access_uid = $form['uid']['#value']
+  $account   = user_load($access_uid);
 
   // Assigned section list of user.
   $section_items = array_keys($account->workbench_access);

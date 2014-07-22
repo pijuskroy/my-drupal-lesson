@@ -25,8 +25,8 @@ define('PATHAUTO_IGNORE_WORDS', 'a, an, as, at, before, but, by, for, from, is, 
 /**
  * Implements hook_hook_info().
  */
-function pathauto_hook_info(){
-$info['pathauto'] = array('group' => 'pathauto');
+function pathauto_hook_info() {
+  $info['pathauto'] = array('group' => 'pathauto');
   $info['path_alias_types'] = array('group' => 'pathauto');
   return $info;
 }
