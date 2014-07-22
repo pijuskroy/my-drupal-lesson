@@ -1,0 +1,6 @@
+name = Workbench Access Hierarchical Select Section Assignment
+description = Simplifies the assignment of workbench access sections in hierarchical select field.
+package = Workbench
+core = 7.x
+dependencies[] = workbench_access
+dependencies[] = hs_smallhierarchy
