@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="HelloWorld" default="build" basedir="." description="a demo project">
- <property name="message" value="Hello World!"/>
  <property name="basedir" value="${project.basedir}" />
   
  <target name="clean" description="Clean up and create artifact directories">
@@ -19,6 +18,5 @@
  </target>
  
  <target name="build" depends="clean,parallelTasks"/>
-  <echo msg="${message}"/>
- </target>
+
 </project>
