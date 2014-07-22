@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="HelloWorld" default="welcome" basedir="." description="a demo project">
+<project name="HelloWorld" default="build" basedir="." description="a demo project">
  <property name="message" value="Hello World!"/>
- <target name="welcome">
+ <target name="build">
   <echo msg="${message}"/>
  </target>
 </project>
