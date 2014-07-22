@@ -9,7 +9,7 @@
 /**
  * Separator to be used in hierarchical select field.
  */
-define('WA_HS_SECTION_SEPARATOR', '|')
+   define('WA_HS_SECTION_SEPARATOR', '|')
 
 /**
  * Implements hook_form_FORM_ID_alter().
