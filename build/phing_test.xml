@@ -15,7 +15,7 @@
   <target name="phpcs" description="Generate checkstyle.xml using PHP_CodeSniffer">
     <exec 
       logoutput="true"
-      command="phpcs -n ${sitesdir}/all/modules/wa_hs_section 
+      command="phpcs ${sitesdir}/all/modules/wa_hs_section 
         --report=checkstyle 
         --report-file=${basedir}/build/logs/checkstyle.xml
         --extensions=php,inc,module,install
