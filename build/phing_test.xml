@@ -15,10 +15,10 @@
   <target name="phpcs" description="Generate checkstyle.xml using PHP_CodeSniffer">
     <exec 
       logoutput="true"
-      command="phpcs ${sitesdir}/all/modules/pathauto
+      command="phpcs ${sitesdir}/all/modules/wa_hs_section
         --report=checkstyle 
         --report-file=${basedir}/build/logs/checkstyle.xml
-        --extensions=module,install
+        --extensions=php,inc,module,install
         --standard=Drupal" />
   </target>
  
