@@ -18,7 +18,6 @@
       command="phpcs ${sitesdir}/all/modules/wa_hs_section 
         --report=checkstyle 
         --report-file=${basedir}/build/logs/checkstyle.xml
-        --extensions=php,inc,module,install
         --standard=Drupal" />
   </target>
  

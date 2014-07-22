@@ -14,7 +14,7 @@
 /**
  * Implements hook_form_FORM_ID_alter().
  */
-function wa_hs_section_form_workbench_access_user_form_alter(&$form, &$form_state, $form_id) {
+function wa_hs_section_form_workbench_access_user_form_alter(&$form, &$form_state, $form_id){
 
   // User id of the user.
   $access_uid = $form['uid']['#value'];
